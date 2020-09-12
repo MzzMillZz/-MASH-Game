@@ -8,6 +8,7 @@
     <title>MASH</title>
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="script.js">
   </head>
   <!-- HEAD SECTION ENDS -->
 
@@ -17,35 +18,47 @@
     <p class="description">Fill in the blanks to reveal your future.</p>
     <form action="" method="post" id="mash">
       <div id="answers" class="hide">
-        <p>You will live in a  <span id="answer_1"></span> with  <span id="answer_3"></span> kids and a wife <span id="answer_2"></span> who owns a <span id="home"></span>.
+        <p>You will live in a <span id="location"></span> with <span id="number"></span> married to <span id="spouse"></span> who owns a <span id="pet"></span>.
       </div>
       <div class="bucket">
+
         <div class="choice-bucket">
           <h4 class="highlight">What kind of house will you have?</h4>
-          <input name="answer_1[]">
-          <input name="answer_1[]">
-          <input name="answer_1[]">
-          <input name="answer_1[]">
+          <input name="location[]" type="text">
+          <input name="location[]" type="text">
+          <input name="location[]" type="text"> 
+          <input name="location[]" type="text">
         </div>
+
         <div class="choice-bucket">
           <h4 class="highlight">How many children will you have?</h4>
-          <input name="answer_2[]">
-          <input name="answer_2[]">
-          <input name="answer_2[]">
-          <input name="answer_2[]">
+          <input name="number[]" type="text">
+          <input name="number[]" type="text">
+          <input name="number[]" type="text">
+          <input name="number[]" type="text">
         </div>
+
+        <div class="choice-bucket">
+          <h4 class="highlight">Who will you marry?</h4>
+          <input name="spouse[]" type="text">
+          <input name="spouse[]" type="text">
+          <input name="spouse[]" type="text">
+          <input name="spouse[]" type="text">
+        </div>
+
         <div class="choice-bucket">
           <h4 class="highlight">What kind of interesting pet will you have?</h4>
-          <input name="answer_3[]">
-          <input name="answer_3[]">
-          <input name="answer_3[]">
-          <input name="answer_3[]">
+          <input name="pet[]" type="text">
+          <input name="pet[]" type="text">
+          <input name="pet[]" type="text">
+          <input name="pet[]" type="text">
         </div>
+      
       </div>
-      <button type="submit" class="button-submit">Reveal my fortune</button>
+
+      <input type="submit" value="Reveal my fortune">
     </form>  
     <script src="script.js"></script>
-  </body>
+    </body>
   <!-- BODY SECTION ENDS -->
-
 </html>
